@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.btv.activity.TroubleModuleActivity"
+    android:background="#F2F2F2">
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <include layout="@layout/include_title"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_title"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:hint="请输入组件名称"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/hui4"/>
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/et_name"
+        android:layout_alignTop="@+id/et_name"
+        android:src="@drawable/search"
+        android:layout_marginRight="5dp" />
+    <View
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="@color/blue2" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@+id/ll_title"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:background="#fff">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@mipmap/ic_launcher"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="CPU 0"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingTop="10dp"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:gravity="center_vertical">-->
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@mipmap/ic_launcher"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Fast Ethernet 0/2"-->
+                <!--android:layout_marginLeft="10dp"/>-->
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingBottom="10dp"-->
+            <!--android:paddingLeft="30dp"-->
+            <!--android:paddingTop="10dp">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:src="@mipmap/ic_launcher" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="Fast Ethernet 1/1" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <ListView
+        android:id="@+id/lv_module_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/ll_title"
+        android:layout_marginTop="100dp"
+        android:scrollbars="none"/>
+
+
+</RelativeLayout>

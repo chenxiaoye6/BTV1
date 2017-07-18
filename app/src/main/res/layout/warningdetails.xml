@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120px">
+
+        <include layout="@layout/include_title"/>
+    </LinearLayout>
+    <!--  kaisfsafsdafsda  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="告警对象:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_objectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="IP地址:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_ipAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="对象类型:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_objectTypeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="物理位置:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="告警内容:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="级别:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="告警平台:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_platform"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="时间:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_occurDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="确认人:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_confirmUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5px"
+                android:background="@color/division"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120px"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_vertical"
+                    android:text="确认时间:"
+                    android:textColor="@color/black"
+                    android:textSize="30px"/>
+
+                <TextView
+                    android:id="@+id/warning_confirmDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:gravity="center_vertical"
+                    android:text="192.198.1.1.1"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="CPU利用率"
+                    android:textColor="@color/black2"
+                    android:textSize="35px"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120px"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginRight="40px"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/warning_cpu_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="性能指标:"
+                        android:textColor="@color/black"
+                        android:textSize="30px"/>
+
+                    <TextView
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/warning_cpu_canshu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center_vertical"
+                        android:text=" "/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:background="@color/division"/>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.7"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="性能指标:"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="30px"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="指标参数"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/division"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.7"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="性能指标:"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="30px"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="指标参数"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/division"/>-->
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40px"
+                android:background="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100px"
+                    android:gravity="center_horizontal"
+                    android:text="影响的业务"
+                    android:textColor="@color/black2"
+                    android:textSize="35px"/>
+                <ListView
+                    android:id="@+id/lv_warningdetail_affecebusi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/textView"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40px"-->
+                        <!--android:layout_weight="0.99"-->
+                        <!--android:src="@drawable/redball"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="120px"-->
+                        <!--android:layout_weight="0.1"-->
+                        <!--android:background="@drawable/backgroundtiao"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="影响的业务"-->
+                        <!--android:textColor="@color/white"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40px"-->
+                        <!--android:layout_weight="0.99"-->
+                        <!--android:src="@drawable/yellowball"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="120px"-->
+                        <!--android:layout_weight="0.1"-->
+                        <!--android:background="@drawable/backgroundtiao"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="影响的业务"-->
+                        <!--android:textColor="@color/white"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40px"-->
+                        <!--android:layout_weight="0.99"-->
+                        <!--android:src="@drawable/greenball"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="120px"-->
+                        <!--android:layout_weight="0.1"-->
+                        <!--android:background="@drawable/backgroundtiao"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="影响的业务"-->
+                        <!--android:textColor="@color/white"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="40px"-->
+                        <!--android:layout_weight="0.99"-->
+                        <!--android:src="@drawable/redball"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="120px"-->
+                        <!--android:layout_weight="0.1"-->
+                        <!--android:background="@drawable/backgroundtiao"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text="影响的业务"-->
+                        <!--android:textColor="@color/white"/>-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="40px"-->
+                <!--android:background="@color/white"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/blue6"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="关联工单"-->
+                    <!--android:textColor="@color/black2"-->
+                    <!--android:textSize="35px"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.7"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="工单标题:"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="30px"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="192.198.1.1.1"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/division"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="当前处理环节:"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="30px"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="192.198.1.1.1"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/division"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.7"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="处理人:"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="30px"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="192.198.1.1.1"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/division"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="120px"-->
+                    <!--android:layout_marginLeft="40px"-->
+                    <!--android:layout_marginRight="40px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.7"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="处理人电话:"-->
+                        <!--android:textColor="@color/black"-->
+                        <!--android:textSize="30px"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="0.2"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:text="192.198.1.1.1"/>-->
+                <!--</LinearLayout>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="5px"-->
+                    <!--android:background="@color/division"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

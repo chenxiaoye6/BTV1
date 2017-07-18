@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="2px"
+        android:background="@color/blue7" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll"
+                android:background="@drawable/shap_square"
+                android:orientation="vertical"
+                android:layout_width="120px"
+                android:layout_height="130px">
+                <TextView
+                    android:id="@+id/a"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="April"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/divisionline"
+                    android:layout_width="100px"
+                    android:layout_height="5px" />
+                <TextView
+                    android:id="@+id/b"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="21"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/c"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="02:02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/d"
+                android:layout_marginLeft="20px"
+                android:gravity="center_vertical"
+                android:text="192.168.1.1.1.012......"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!--<TextView-->
+                <!--android:id="@+id/e"-->
+                <!--android:layout_marginLeft="20px"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:text="192.168.1.1.1"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent" />-->
+            <TextView
+                android:maxLines="2"
+                android:id="@+id/f"
+                android:layout_marginLeft="20px"
+                android:gravity="center_vertical"
+                android:text="链路左端可用性不可用性可用性不可用性可用性"
+                android:ellipsize="end"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="150px"
+                    android:layout_height="150px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/circlestate" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="80px"
+                        android:layout_height="80px"
+                        android:src="@drawable/shebei" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="2px"
+        android:background="@color/blue7" />
+</LinearLayout>

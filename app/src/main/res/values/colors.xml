@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#92D8D1</color>
+    <color name="textColor2">#00AE9D</color>
+    <color name="textcolor3">#00AE9D</color>
+    <color name="titleBackground">#62D6C8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#ACE9E2</color>
+    <color name="hui1">#666666</color>
+    <color name="blue2">#38D7C5</color>
+    <color name="blue3">#ACE9E2</color>
+    <color name="blue4">#C2EFE9</color>
+    <color name="blue5">#00D5BB</color>
+    <color name="black">#000000</color>
+    <color name="blue6">#CEEBDD</color>
+    <color name="blue7">#99E8D2</color>
+    <color name="division">#E8E8E8</color>
+    <color name="red">#FC0A0A</color>
+    <color name="black2">#333333</color>
+    <color name="hui">#E6E6E6</color>
+    <color name="hui3">#666666</color>
+    <color name="hui4">#BFBFC0</color>
+    <color name="text">#4D4D4D</color>
+    <color name="bglv">#D9EBDC</color>
+    <color name="bg">#D9EBDC</color>
+    <color name="bghui">#F2F2F2</color>
+    <color name="yellow">#f88a76</color>
+</resources>

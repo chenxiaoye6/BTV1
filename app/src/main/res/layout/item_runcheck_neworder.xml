@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:background="#E1F2E3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <ImageView
+            android:layout_marginLeft="30px"
+            android:src="@drawable/point"
+            android:layout_width="20px"
+            android:layout_height="20px"/>
+        <TextView
+            android:id="@+id/tv_neworderitem"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="30px"
+            android:gravity="center|left"
+            android:text="管理状态不可用"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="30px"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="选择告警对象"
+            android:textColor="@color/hui3"
+            android:textSize="40px"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:gravity="center"
+            android:hint="输入搜索告警对象的IP地址/名称"
+            android:textSize="11sp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:gravity="center_horizontal"
+            android:text="选择告警时间"/>
+
+        <RadioGroup
+            android:id="@+id/rg_time"
+            android:layout_width="450px"
+            android:layout_height="wrap_content"
+            android:layout_margin="40px">
+
+            <RadioButton
+                android:id="@+id/rb_time1"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:background="@drawable/selector_dailog"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="最近30分钟"
+                android:textColor="@color/hui3"
+                android:textSize="30px"/>
+
+            <RadioButton
+                android:id="@+id/rb_time2"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/selector_dailog"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最近1小时"
+                android:textColor="@color/hui3"
+                android:textSize="30px"/>
+
+            <RadioButton
+                android:id="@+id/rb_time3"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/selector_dailog"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最近6小时"
+                android:textColor="@color/hui3"
+                android:textSize="30px"/>
+
+            <RadioButton
+                android:id="@+id/rb_time4"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/selector_dailog"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最近12小时"
+                android:textColor="@color/hui3"
+                android:textSize="30px"/>
+
+            <RadioButton
+                android:id="@+id/rb_time5"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/selector_dailog"
+                android:button="@null"
+                android:gravity="center"
+                android:text="最近7天"
+                android:textColor="@color/hui3"
+                android:textSize="30px"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_seek"
+            android:layout_width="300px"
+            android:layout_height="80px"
+            android:background="@drawable/shap_button"
+            android:text="查询"
+            android:textColor="@color/white"
+            android:textSize="35px"/>
+    </LinearLayout>
+</LinearLayout>

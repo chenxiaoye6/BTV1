@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+
+        <include layout="@layout/include_title"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="360px"
+                android:background="#D9EBDC"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="请求统计"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/mpiechart1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right"
+                            android:paddingRight="50dp"
+                            android:text="请求部门"
+                            android:textSize="11sp"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/mpiechart2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="right"
+                            android:paddingRight="50dp"
+                            android:text="请求类别"
+                            android:textSize="11sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="6px"
+                    android:layout_height="60px"
+                    android:background="#62D6C8"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="事 件 单"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:background="#D9EBDC"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_runcheck_notdo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:gravity="center"
+                        android:src="@drawable/waitdo"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:gravity="center|bottom"
+                        android:text="待办/待阅"
+                        android:textColor="#62D6C8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_runcheck_done"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:gravity="center"
+                        android:src="@drawable/done"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:gravity="center|bottom"
+                        android:text="已办/已阅"
+                        android:textColor="#62D6C8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_runcheck_check"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:gravity="center"
+                        android:src="@drawable/check"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:gravity="center|bottom"
+                        android:text="查看草稿"
+                        android:textColor="#62D6C8"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_runcheck_newadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10px"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60px"
+                        android:layout_height="60px"
+                        android:gravity="center"
+                        android:src="@drawable/newadd"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50px"
+                        android:gravity="center|bottom"
+                        android:text="新建工单"
+                        android:textColor="#62D6C8"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="6px"
+                    android:layout_height="60px"
+                    android:background="#62D6C8"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60px"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center_vertical"
+                    android:text="最 新 工 单"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_runcheck_newestorder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#CCCCCC"
+                android:dividerHeight="3px">
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

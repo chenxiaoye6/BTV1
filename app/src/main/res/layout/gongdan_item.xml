@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70px">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_weight="0.9"
+            android:src="@drawable/point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginLeft="10px"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="用心服务获好评,技术精湛创佳绩,公司优质服务等...."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

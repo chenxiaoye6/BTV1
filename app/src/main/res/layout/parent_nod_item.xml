@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_pt_type"
+        android:text="服务请求类"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <ListView
+        android:id="@+id/lv_chlidren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

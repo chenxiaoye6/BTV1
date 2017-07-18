@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px">
+        <include layout="@layout/include_title"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gongdandetail_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="全台网高标清"
+        android:textColor="#000000"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/gongdandetail_time"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="2016-08-08   10:30"/>
+
+    <TextView
+        android:id="@+id/gongdandetail_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#D5ECEA"
+        android:text="三大方法士大夫士大夫发士大夫士大夫士大夫"
+        android:textSize="13sp"/>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50px"
+                android:layout_weight="0.2"
+                app:srcCompat="@drawable/btv"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:gravity="center|top"
+                android:text="随时随地轻松运维"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100px"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_ip"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="150px"
+                android:layout_marginRight="150px"
+                android:layout_weight="1"
+                android:background="@drawable/shap_circlecase"
+                android:gravity="center"
+                android:hint="服务器IP"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_host"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:layout_marginLeft="150px"
+                android:layout_marginRight="150px"
+                android:layout_marginTop="30px"
+                android:layout_weight="1"
+                android:background="@drawable/shap_circlecase"
+                android:gravity="center"
+                android:hint="端口号"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="170px"
+                android:layout_marginRight="150px"
+                android:layout_marginTop="10px"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/login_general"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:layout_marginTop="10px"
+                    android:button="@drawable/selector_radiobutton"
+                    android:paddingLeft="20px"
+                    android:text="普通登录方式"
+                    android:textColor="#9CA5A4"
+                    android:textSize="15sp"/>
+
+                <RadioButton
+                    android:id="@+id/login_safe"
+                    android:layout_width="match_parent"
+                    android:layout_height="50px"
+                    android:layout_marginTop="30px"
+                    android:button="@drawable/selector_radiobutton"
+                    android:paddingLeft="20px"
+                    android:text="安全隧道登录方式"
+                    android:textColor="#9CA5A4"
+                    android:textSize="15sp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50px"
+            android:layout_weight="0.1"
+            android:gravity="center|top"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_iplogin_next"
+                android:layout_width="350px"
+                android:layout_height="70px"
+                android:gravity="center_horizontal"
+                android:text="下一步  >>"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

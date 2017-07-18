@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#D5ECEA">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="120px"
+            android:layout_height="120px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shap_square"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_noticetv"
+                android:gravity="center"
+                android:text="April"/>
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="21"/>
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="02:02"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notice_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/ll"
+            android:layout_toRightOf="@id/ll"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="全台网高标清网络化节目制播体系建设进入新阶段"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/notice_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_title"
+            android:layout_toRightOf="@id/ll"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="全台网高标清网络化节目制播体系建设进入新阶段年是带你飞大沙发斯蒂芬年是带你飞年是带你飞你说打分你就卡死带你飞"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+</LinearLayout>

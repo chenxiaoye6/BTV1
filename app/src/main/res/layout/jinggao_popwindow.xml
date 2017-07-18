@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+
+        android:background="@drawable/shap_pop"
+        android:orientation="vertical"
+        android:layout_width="500px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pop_config"
+            android:gravity="center"
+            android:text="确认"
+            android:layout_width="match_parent"
+            android:layout_height="120px" />
+        <TextView
+
+            android:background="@color/division"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+        <TextView
+            android:id="@+id/pop_allconfig"
+            android:gravity="center"
+            android:text="全部确认"
+            android:layout_width="match_parent"
+            android:layout_height="120px" />
+        <TextView
+            android:background="@color/division"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+        <TextView
+            android:id="@+id/pop_sms"
+            android:gravity="center"
+            android:text="转发短信"
+            android:layout_width="match_parent"
+            android:layout_height="120px" />
+        <TextView
+            android:background="@color/division"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+        <TextView
+            android:id="@+id/pop_email"
+            android:gravity="center"
+            android:text="转发邮箱"
+            android:layout_width="match_parent"
+            android:layout_height="120px" />
+        <TextView
+            android:background="@color/division"
+            android:layout_width="match_parent"
+            android:layout_height="2px" />
+        <TextView
+            android:id="@+id/pop_copy"
+            android:gravity="center"
+            android:text="复制"
+            android:layout_width="match_parent"
+            android:layout_height="120px" />
+    </LinearLayout>
+</LinearLayout>
